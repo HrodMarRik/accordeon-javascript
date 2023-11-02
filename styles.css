@@ -1,0 +1,53 @@
+:root {
+  --color-black: #242024;
+  --color-gray-100: #a3a1a3;
+  --color-gray-200: #6d6d6d;
+
+  --font-family: "Nunito", sans-serif;
+
+  --font-md: 18px;
+  --font-xl: 40px;
+
+  --font-bold: 700;
+
+  --space-md: 16px;
+  --space-xl: 32px;
+  --space-xxl: 40px;
+
+  --animation-delay-100: 0.3s;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0 100px;
+  font-family: var(--font-family);
+}
+h1 {
+  font-weight: var(--font-bold);
+  text-align: center;
+  padding: var(--space-xl) 0;
+  font-size: var(--font-xl);
+}
+.accordion {
+  background-color: var(--color-black);
+  color: white;
+  cursor: pointer;
+  padding: var(--space-md);
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: var(--font-md);
+  transition: var(--animation-delay-100);
+}
+.active,
+.accordion:hover {
+  background-color: var(--color-gray-200);
+}
+.panel {
+  padding: 0 var(--space-md);
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
