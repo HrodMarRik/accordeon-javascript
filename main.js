@@ -1,7 +1,7 @@
 const accordions = Array.from(document.querySelectorAll(".accordion"));
 
 accordions.map((accordion) => {
-  const content = accordion.nextElementSibling; // Sélectionnez le contenu associé à ce bouton
+  const content = accordion.nextElementSibling;
 
     accordion.addEventListener("click", function() {
       if (content.style.display === "none" || content.style.display === "") {
